@@ -11,5 +11,16 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
+ *= bulma-extensions
  *= require_self
  */
+
+ .shadow {
+   transition: box-shadow .3s;
+   border-radius:10px;
+ }
+
+ .shadow:hover {
+   box-shadow: 0 0 11px rgba(33,33,33,.2);
+ }

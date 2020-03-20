@@ -1,0 +1,61 @@
+-# .hero-carousel.carousel-animate-slide.is-reversing.carousel-animated{"data-autoplay" => "true"}
+-#   .carousel-container
+-#     .carousel-item.has-background.is-active{:style => "z-index: 1; order: 1;"}
+-#       =image_tag("banner/01.jpg", alt: "#{t('.company_name')}", class: "is-background")
+-#       .title
+-#         First Image
+-#         %a{:href => "/contact"} More Info
+-#     .carousel-item.has-background{:style => "z-index: 0; order: 2;"}
+-#       %img.is-background{:alt => "Second Image", :draggable => "false", :height => "310", :src => "https://res.cloudinary.com/johnmica/image/upload/v1470799784/freezing_l2no09.jpg", :width => "640"}/
+-#       .title Second Image
+-#     .carousel-item.has-background{:style => "z-index: 0; order: 3;"}
+-#       %img.is-background{:alt => "Third Image", :draggable => "false", :height => "310", :src => "https://res.cloudinary.com/johnmica/image/upload/v1470799784/freezing_l2no09.jpg", :width => "640"}/
+-#       .title Third Image
+-#     .carousel-item.has-background{:style => "z-index: 0; order: 0;"}
+-#       %img.is-background{:alt => "Fourth Image", :draggable => "false", :height => "310", :src => "https://res.cloudinary.com/johnmica/image/upload/v1470799863/snowy-day_oyupvb.jpg", :width => "640"}/
+-#       .title
+-#         Fourth Image
+-#         %a{:href => "https://google.com"} More Info
+-#   .carousel-navigation
+-#     .carousel-nav-left
+-#       %i.fa.fa-chevron-left
+-#     .carousel-nav-right
+-#       %i.fa.fa-chevron-right
+
+
+
+
+%section.hero.is-medium.has-carousel
+  .hero-carousel.carousel.carousel-animated.carousel-animate-slide{"data-autoplay" => "true"}
+    .carousel-container
+      .carousel-item.has-background.is-active
+        =image_tag("banner/05.jpg", alt: "#{t('.company_name')}", class: "is-background")
+      .carousel-item.has-background
+        =image_tag("banner/06.jpg", alt: "#{t('.company_name')}", class: "is-background")
+      .carousel-item.has-background
+        =image_tag("banner/07.jpg", alt: "#{t('.company_name')}", class: "is-background")
+    .carousel-navigation.is-overlay
+      .carousel-nav-left
+        %i.fa.fa-chevron-left{"aria-hidden" => "true"}
+      .carousel-nav-right
+        %i.fa.fa-chevron-right{"aria-hidden" => "true"}
+  .hero-body.has-text-centered
+    %section.section.is-hero
+      .container
+        .columns.is-vcentered
+          .column.is-6
+            .section-header
+              %h1.title.is-spaced.bg-header.animated.fadeInDown
+                = t('.title_first_phrase')
+                = t('.title_second_phrase')
+              %br
+              .field.is-grouped.animated.fadeInUp
+                .control
+                  %a.button.is-primary.is-medium.border{:href => ""}= t('.more')
+                .control.hide
+                  %a.button.is-primary.is-medium.is-outlined{:href => ""}= t('.premium')
+-# = render :partial => 'top_interesting'
+-# = render :partial => 'grid'
+-# = render :partial => 'rooftop'
+-# = render :partial => 'new_products'
+-# = render :partial => 'grid_thumbs'

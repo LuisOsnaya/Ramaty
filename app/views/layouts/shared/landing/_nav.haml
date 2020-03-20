@@ -1,0 +1,17 @@
+%header
+  %nav#navbar.navbar.is-fixed-top.has-shadow
+    .container
+      .navbar-brand
+        %a.navbar-item{:href => "/"}
+          =image_tag("logo_ramaty.png", class: 'logo-brand', alt: "#{t('.company_name')}")
+        #navbarBurger.navbar-logo_ramaty.burger{"data-target" => "navMenuIndex"}
+          %span
+          %span
+          %span
+      #navMenuIndex.navbar-menu
+        .navbar-end
+          %a.navbar-item= t('.home')
+          %a.navbar-item= t('.about_us')
+          %a.navbar-item= t('.branches')
+          %a.navbar-item= t('.catalogue')
+          %a.navbar-item= t('.contact')

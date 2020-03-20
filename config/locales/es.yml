@@ -1,0 +1,20 @@
+es:
+  routes:
+    episodes: episodios
+  layouts:
+    application:
+      company_name: Ramaty
+      company_description: "Ramaty description"
+      company_domain: "https://www.ramaty.com"
+      facebook_user: "@ramatymx"
+      facebook_user_id: "462007377213245"
+      instagram_user: "@ramaty_mx"
+    shared:
+      landing:
+        nav:
+          company_name: Ramaty
+          about_us: Nosotros
+          branches: Sucursales
+          categories: Categorías
+          catalogue: Catálogo
+          contact: Contacto

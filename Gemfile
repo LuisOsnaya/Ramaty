@@ -66,6 +66,10 @@ gem 'kaminari'
 # A set of common locale data and translations to internationalize and/or
 # localize your Rails applications.
 gem 'rails-i18n', '~> 6.0.0'
+# The travis gem includes both a command line client and a Ruby library to
+# interface with a Travis CI service. 
+gem 'travis', '~> 1.8', '>= 1.8.8'
+gem 'travis-lint', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger
