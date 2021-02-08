@@ -47,7 +47,7 @@ gem 'honeybadger', '~> 4.0'
 # This gem provides a simple and extremely flexible way to upload files from
 # Ruby applications. It works well with Rack based web applications, such as
 # Ruby on Rails.
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 # A ruby wrapper for ImageMagick or GraphicsMagick command line.
 gem 'mini_magick'
 # Use Redis adapter to run Action Cable in production
